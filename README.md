@@ -1,2 +1,2 @@
-# dianneschriber.github.io
+# dianneschreiber.github.io
 Websizzle
