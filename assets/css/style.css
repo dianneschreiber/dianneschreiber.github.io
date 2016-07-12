@@ -329,19 +329,20 @@ h1,h2,h3,h4,h5,h6 {
 /* About Section */
 .about {
 	padding-top: 90px;
+    position: inherit;
 }
 .about-area {
 	background: #f7f7f7;
 	border-top: 2px solid #3498db;
 	border-bottom: 2px solid #3498db;
-	position: relative;
+	position: inherit;
 }
 .title-area {
-	top: -35px;
+	top: 100px;
 	width: 330px;
 	left: 50%;
 	margin-left: -175px;
-	position: absolute;
+	position: relative;
 }
 .about-title {
 	background: #f7f7f7;
