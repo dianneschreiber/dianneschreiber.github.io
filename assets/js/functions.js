@@ -97,10 +97,12 @@
     var cuff = $("#mainCuff");      
     
     itemSlider.owlCarousel({
+      lazyLoad: true,  
       autoPlay : 3000,
       stopOnHover : true,
       pagination : false,
       paginationNumbers: false,
+
 
       itemsCustom : [
       [0, 1],
