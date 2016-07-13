@@ -234,19 +234,22 @@
         
 
         
-<section id="menuGall" class = "owl text-center">
+<section id="portfolio" class = "owl text-center">
  <div class="container" class="owl-carousel owl-theme owl-loaded">
   <div class="portfolio-area">
     <div class="portfolio-top">
       <h2 class="portfolio-title">Galleries</h2>
       <p class="title-description">Portfolio</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left post-prev" data-slide="post-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right post-next" data-slide="post-next"><i class="fa fa-angle-right"></i></a>
+      </div>
       </div>
     </div><!-- /.portfolio-top -->
         
      
      
- <div id="mainGall" class = "owl-stage">
+ <div id="portfolio-slider" class = "owl-stage">
      
     <div>
         <a href = "#menuNeck"><img src="images/N/N-10.jpg" alt="Portfolio Image" ></a>
@@ -278,11 +281,7 @@
       
      </div>
 <!--
-        <div>
-            <a href = "#menuCuff"><img src="images/portfolio/2.jpg" alt="Portfolio Image"></a>
 
-        <span class="item-title">Cufflinks </span>
-      </div>
       </div>  
  <div class="owl-controls">
         <div class="owl-nav">
@@ -309,7 +308,10 @@
     <div class="portfolio-top">
       <h2 class="portfolio-title">Necklaces</h2>
       <p class="title-description">Gallery</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left neck-prev" data-slide="neck-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right neck-next" data-slide="neck-next"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div><!-- /.portfolio-top -->
         
  <div id="mainNeck">
@@ -644,7 +646,10 @@
     <div class="portfolio-top">
       <h2 class="portfolio-title">Rings</h2>
       <p class="title-description">Gallery</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left ring-prev" data-slide="ring-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right ring-next" data-slide="ring-next"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div><!-- /.portfolio-top -->
         
  <div id="mainRing">
@@ -688,12 +693,6 @@
         <span class="item-title">Ring6 </span>
       </div>
      
-                           <div class="item">
-        <div class="item-image">
-          <img src="images/R/R-15jpg" alt="Portfolio Image">
-        </div>
-        <span class="item-title">Ring6 </span>
-      </div>
      
                            <div class="item">
         <div class="item-image">
@@ -884,7 +883,10 @@
     <div class="portfolio-top">
       <h2 class="portfolio-title">Earrings</h2>
       <p class="title-description">Gallery</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left earr-prev" data-slide="earr-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right earr-next" data-slide="earr-next"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div><!-- /.portfolio-top -->
         
  <div id="mainEarr">
@@ -936,7 +938,10 @@
     <div class="portfolio-top">
       <h2 class="portfolio-title">Bracelets and Bangles</h2>
       <p class="title-description">Gallery</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left bb-prev" data-slide="bb-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right bb-next" data-slide="bb-next"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div><!-- /.portfolio-top -->
         
  <div id="mainBB">
@@ -1120,7 +1125,10 @@
     <div class="portfolio-top">
       <h2 class="portfolio-title">Keyrings</h2>
       <p class="title-description">Gallery</p>
-
+     <div class="slide-nav-container">
+        <a class="slide-nav left slide-left key-prev" data-slide="key-prev"><i class="fa fa-angle-left"></i></a>
+        <a class="slide-nav right slide-right key-next" data-slide="key-next"><i class="fa fa-angle-right"></i></a>
+      </div>
     </div><!-- /.portfolio-top -->
         
  <div id="mainKey">
@@ -1246,25 +1254,20 @@
     </div><!-- /.container -->
   </div><!-- /#footer-top -->
 
-  <div id="footer-bottom" class="footer-bottom text-center">
+  <div id="footer-bottom" class="footer-bottom">
       <section id="top-contact" class="top-contact">
   			<div class="container">
   				<div class="row">
   					<div class="col-sm-8 pull-left">
   						<ul class="contact-list">
   							<li>
-  								<a class="site-name" href="#">
-  									<span class="top-icon"><i class="fa fa-link"></i></span>
-  									www.dianneschreiber.com
-  								</a>
-  							</li>
-  							<li>
-  								<a class="info" href="#">
+  	
   									<span class="top-icon"><i class="fa fa-envelope"></i></span>
   									dianneschreiber@gmail.com
-  								</a>
   							</li>
+                            
   						</ul>
+     
   					</div>
 
   					<div class="col-sm-4 pull-right">
@@ -1273,12 +1276,7 @@
   								<li>
   									<a href="#" class="top-icon fa fa-facebook"></a>
   								</li>
-  								<li>
-  									<a href="#" class="top-icon fa fa-twitter"></a>
-  								</li>
-  								<li>
-  									<a href="#" class="top-icon fa fa-linkedin"></a>
-  								</li>
+
   							</ul>
   						</div>
   					</div>
@@ -1286,11 +1284,13 @@
   			</div><!-- /.container -->
   		</section><!-- /#top-contact -->
       
+<!--
     <div class="container">
       <div id="copyright" class="copyright">
         &copy; <a href="http://demos.jeweltheme.com/heera">Heera</a>  2015 - Designed &amp; Developed by <a href="http://jeweltheme.com">Jewel Theme</a>
-      </div><!-- /#copyright -->
+      </div> /#copyright 
     </div>
+-->
   </div><!-- /#footer-bottom -->
 </footer>
 
@@ -1351,7 +1351,7 @@
     easing: 'swing'
   }); 
      
-  $('#menuGall #mainGall').onePageNav({
+  $('#portfolio #portfolio-slider').onePageNav({
     scrollSpeed: 1500,
     scrollThreshold: 0.5,
     scrollOffset: 95,
@@ -1359,85 +1359,6 @@
   }); 
      
 
- 
-      
-     $("#mainGall").owlCarousel({
-//     navigation:true,
-//    navigationText: [
-//      "<i class='icon-chevron-left icon-white'><</i>",
-//      "<i class='icon-chevron-right icon-white'>></i>"
-//      ],
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
-
- 
-  });
-
-
-      
-     $("#mainNeck").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-
-     $("#mainRing").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-      
-      $("#mainEarr").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-      
-      $("#mainBB").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-            
-      $("#mainKey").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-      
-      $("#mainCuff").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 4,
-      itemsDesktop : [1199,3],
-      itemsDesktopSmall : [979,3]
- 
-  });
-      
 
       
 });
