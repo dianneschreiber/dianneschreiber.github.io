@@ -87,8 +87,15 @@
 
     /*------------------------- Portfolio Slider ----------------------------*/
 
-    var itemSlider = $("#portfolio-slider");
-
+    var itemSlider = $("#portfolio-slider , #mainNeck , #mainRing , #mainEarr , #mainBB , #mainKey, #mainCuff");
+    var port = $("#portfolio-slider");
+    var neck = $("#mainNeck");
+    var ring = $("#mainRing");
+    var earr = $("#mainEarr");   
+    var bb = $("#mainBB");
+    var key = $("#mainKey");
+    var cuff = $("#mainCuff");      
+    
     itemSlider.owlCarousel({
       autoPlay : 3000,
       stopOnHover : true,
@@ -109,16 +116,44 @@
         responsiveBaseWidth: window
       });
 
-
+      
  // Custom Navigation 
- $(".post-next").click(function(){
-  itemSlider.trigger('owl.next');
+$(".post-next").click(function(){
+  port.trigger('owl.next');
 });
  $(".post-prev").click(function(){
-  itemSlider.trigger('owl.prev');
+  port.trigger('owl.prev');
 });
 
-
+$(".neck-next").click(function(){
+  neck.trigger('owl.next');
+});
+ $(".neck-prev").click(function(){
+  neck.trigger('owl.prev');
+});
+    
+$(".ring-next").click(function(){
+  ring.trigger('owl.next');
+});
+ $(".ring-prev").click(function(){
+  ring.trigger('owl.prev');
+});
+      
+$(".earr-next").click(function(){
+  earr.trigger('owl.next');
+});
+ $(".earr-prev").click(function(){
+  earr.trigger('owl.prev');
+});   
+      
+      
+$(".bb-next").click(function(){
+  bb.trigger('owl.next');
+});
+ $(".bb-prev").click(function(){
+  bb.trigger('owl.prev');
+});         
+      
 });
 
   /*------------------------------ SmoothScroll (for Mouse Wheel) v1.2.1 ----------------------*/
