@@ -94,14 +94,14 @@
     var earr = $("#mainEarr");   
     var bb = $("#mainBB");
     var key = $("#mainKey");
-    var cuff = $("#mainCuff");      
+    var cuff = $("#mainCuff");
     
     itemSlider.owlCarousel({
       lazyLoad: true,  
-      autoPlay : 3000,
-      stopOnHover : true,
-      pagination : false,
-      paginationNumbers: false,
+//      autoPlay : 3000,
+//      stopOnHover : true,
+//      pagination : false,
+//      paginationNumbers: false,
 
 
       itemsCustom : [
@@ -113,17 +113,17 @@
       [1200, 4],
       ],
         // Responsive 
-        responsive: true,
-        responsiveRefreshRate : 200,
-        responsiveBaseWidth: window
+//        responsive: true,
+//        responsiveRefreshRate : 200,
+//        responsiveBaseWidth: window
       });
 
       
  // Custom Navigation 
-$(".post-next").click(function(){
+$(".port-next").click(function(){
   port.trigger('owl.next');
 });
- $(".post-prev").click(function(){
+ $(".port-prev").click(function(){
   port.trigger('owl.prev');
 });
 
@@ -154,8 +154,43 @@ $(".bb-next").click(function(){
 });
  $(".bb-prev").click(function(){
   bb.trigger('owl.prev');
-});         
+});  
       
+$(".key-next").click(function(){
+  key.trigger('owl.next');
+});
+ $(".key-prev").click(function(){
+  key.trigger('owl.prev');
+});        
+      
+      
+});
+
+
+$('.center').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
 });
 
   /*------------------------------ SmoothScroll (for Mouse Wheel) v1.2.1 ----------------------*/
